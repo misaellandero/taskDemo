@@ -8,7 +8,7 @@
 
 import Foundation
 import CoreData
-
+import SwiftUI
 
 extension TaskTag {
 
@@ -18,8 +18,32 @@ extension TaskTag {
 
     @NSManaged public var id: UUID?
     @NSManaged public var name: String?
-    @NSManaged public var completed: Bool
+    @NSManaged public var color: Int16
     @NSManaged public var task: NSSet?
+    
+    // Wrapped id
+    public var wrappedId: UUID {
+        id ?? UUID()
+    }
+    // Wrapped name
+    public var wrappedName: String {
+        name ?? "Unknown"
+    }
+    
+    // Wrapped Color
+    public var wrappedColor: Color {
+        let colorId = Int(color)
+        return AppStyles.AppColors[colorId].color
+    }
+    
+    // MARK: - Array task
+        public var taskArray: [Task] {
+            let set = task as? Set<Task> ?? []
+            
+            return set.sorted {
+                $0.wrappedName > $1.wrappedName
+            }
+        }
 
 }
 

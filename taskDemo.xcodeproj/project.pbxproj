@@ -27,6 +27,8 @@
 		13AA651327015098005DCF13 /* TaskTag+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA650B27015098005DCF13 /* TaskTag+CoreDataProperties.swift */; };
 		13AA651A27015158005DCF13 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AA651927015158005DCF13 /* CloudKit.framework */; };
 		13AA651C27015174005DCF13 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AA651B27015174005DCF13 /* CloudKit.framework */; };
+		13AA651F27015386005DCF13 /* AppStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA651E27015386005DCF13 /* AppStyles.swift */; };
+		13AA652027015386005DCF13 /* AppStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA651E27015386005DCF13 /* AppStyles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,7 @@
 		13AA65172701514F005DCF13 /* taskDemo--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "taskDemo--iOS--Info.plist"; sourceTree = "<group>"; };
 		13AA651927015158005DCF13 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		13AA651B27015174005DCF13 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		13AA651E27015386005DCF13 /* AppStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,7 @@
 		13AA65072701501E005DCF13 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				13AA651D27015372005DCF13 /* AppStyles */,
 				13AA6515270150A7005DCF13 /* TaskTag */,
 				13AA6514270150A0005DCF13 /* Task */,
 			);
@@ -168,6 +172,14 @@
 				13AA651927015158005DCF13 /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		13AA651D27015372005DCF13 /* AppStyles */ = {
+			isa = PBXGroup;
+			children = (
+				13AA651E27015386005DCF13 /* AppStyles.swift */,
+			);
+			path = AppStyles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +283,7 @@
 				13AA64F427014E82005DCF13 /* Persistence.swift in Sources */,
 				13AA650C27015098005DCF13 /* Task+CoreDataClass.swift in Sources */,
 				13AA651227015098005DCF13 /* TaskTag+CoreDataProperties.swift in Sources */,
+				13AA651F27015386005DCF13 /* AppStyles.swift in Sources */,
 				13AA650227014F19005DCF13 /* taskDemo.xcdatamodeld in Sources */,
 				13AA64F027014E82005DCF13 /* taskDemoApp.swift in Sources */,
 				13AA651027015098005DCF13 /* TaskTag+CoreDataClass.swift in Sources */,
@@ -286,6 +299,7 @@
 				13AA64F527014E82005DCF13 /* Persistence.swift in Sources */,
 				13AA650D27015098005DCF13 /* Task+CoreDataClass.swift in Sources */,
 				13AA651327015098005DCF13 /* TaskTag+CoreDataProperties.swift in Sources */,
+				13AA652027015386005DCF13 /* AppStyles.swift in Sources */,
 				13AA650327014F19005DCF13 /* taskDemo.xcdatamodeld in Sources */,
 				13AA64F127014E82005DCF13 /* taskDemoApp.swift in Sources */,
 				13AA651127015098005DCF13 /* TaskTag+CoreDataClass.swift in Sources */,

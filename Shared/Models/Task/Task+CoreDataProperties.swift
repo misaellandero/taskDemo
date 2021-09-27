@@ -17,9 +17,19 @@ extension Task {
     }
 
     @NSManaged public var id: UUID?
-    @NSManaged public var name: String?
-    @NSManaged public var color: Int16
+    @NSManaged public var name: String? 
+    @NSManaged public var completed: Bool
     @NSManaged public var tag: TaskTag?
+    
+    
+    // Wrapped id
+    public var wrappedId: UUID {
+        id ?? UUID()
+    }
+    // Wrapped name
+    public var wrappedName: String {
+        name ?? "Unknown"
+    }
 
 }
 
