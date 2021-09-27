@@ -29,6 +29,18 @@
 		13AA651C27015174005DCF13 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AA651B27015174005DCF13 /* CloudKit.framework */; };
 		13AA651F27015386005DCF13 /* AppStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA651E27015386005DCF13 /* AppStyles.swift */; };
 		13AA652027015386005DCF13 /* AppStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA651E27015386005DCF13 /* AppStyles.swift */; };
+		13AA6525270155E5005DCF13 /* TabBarNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA6524270155E5005DCF13 /* TabBarNavigationView.swift */; };
+		13AA6526270155E5005DCF13 /* TabBarNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA6524270155E5005DCF13 /* TabBarNavigationView.swift */; };
+		13AA6528270155EF005DCF13 /* SideBarNabigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA6527270155EF005DCF13 /* SideBarNabigationView.swift */; };
+		13AA6529270155EF005DCF13 /* SideBarNabigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA6527270155EF005DCF13 /* SideBarNabigationView.swift */; };
+		13AA652B27017787005DCF13 /* TaskTagList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA652A27017787005DCF13 /* TaskTagList.swift */; };
+		13AA652C27017787005DCF13 /* TaskTagList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA652A27017787005DCF13 /* TaskTagList.swift */; };
+		13AA652E27017797005DCF13 /* TaskTagAddNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA652D27017797005DCF13 /* TaskTagAddNew.swift */; };
+		13AA652F27017797005DCF13 /* TaskTagAddNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA652D27017797005DCF13 /* TaskTagAddNew.swift */; };
+		13AA6531270177CB005DCF13 /* TaskTagDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA6530270177CB005DCF13 /* TaskTagDetail.swift */; };
+		13AA6532270177CB005DCF13 /* TaskTagDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA6530270177CB005DCF13 /* TaskTagDetail.swift */; };
+		13AA6534270177E0005DCF13 /* TaskTagRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA6533270177E0005DCF13 /* TaskTagRow.swift */; };
+		13AA6535270177E0005DCF13 /* TaskTagRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA6533270177E0005DCF13 /* TaskTagRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +61,12 @@
 		13AA651927015158005DCF13 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		13AA651B27015174005DCF13 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		13AA651E27015386005DCF13 /* AppStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyles.swift; sourceTree = "<group>"; };
+		13AA6524270155E5005DCF13 /* TabBarNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarNavigationView.swift; sourceTree = "<group>"; };
+		13AA6527270155EF005DCF13 /* SideBarNabigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarNabigationView.swift; sourceTree = "<group>"; };
+		13AA652A27017787005DCF13 /* TaskTagList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTagList.swift; sourceTree = "<group>"; };
+		13AA652D27017797005DCF13 /* TaskTagAddNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTagAddNew.swift; sourceTree = "<group>"; };
+		13AA6530270177CB005DCF13 /* TaskTagDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTagDetail.swift; sourceTree = "<group>"; };
+		13AA6533270177E0005DCF13 /* TaskTagRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTagRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +206,8 @@
 		13AA6521270154EE005DCF13 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				13AA6524270155E5005DCF13 /* TabBarNavigationView.swift */,
+				13AA6527270155EF005DCF13 /* SideBarNabigationView.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -195,6 +215,10 @@
 		13AA6522270154FA005DCF13 /* TaskTag */ = {
 			isa = PBXGroup;
 			children = (
+				13AA652A27017787005DCF13 /* TaskTagList.swift */,
+				13AA6530270177CB005DCF13 /* TaskTagDetail.swift */,
+				13AA652D27017797005DCF13 /* TaskTagAddNew.swift */,
+				13AA6533270177E0005DCF13 /* TaskTagRow.swift */,
 			);
 			path = TaskTag;
 			sourceTree = "<group>";
@@ -307,12 +331,18 @@
 				13AA64F427014E82005DCF13 /* Persistence.swift in Sources */,
 				13AA650C27015098005DCF13 /* Task+CoreDataClass.swift in Sources */,
 				13AA651227015098005DCF13 /* TaskTag+CoreDataProperties.swift in Sources */,
+				13AA6528270155EF005DCF13 /* SideBarNabigationView.swift in Sources */,
+				13AA6531270177CB005DCF13 /* TaskTagDetail.swift in Sources */,
+				13AA6534270177E0005DCF13 /* TaskTagRow.swift in Sources */,
 				13AA651F27015386005DCF13 /* AppStyles.swift in Sources */,
 				13AA650227014F19005DCF13 /* taskDemo.xcdatamodeld in Sources */,
 				13AA64F027014E82005DCF13 /* taskDemoApp.swift in Sources */,
 				13AA651027015098005DCF13 /* TaskTag+CoreDataClass.swift in Sources */,
 				13AA650E27015098005DCF13 /* Task+CoreDataProperties.swift in Sources */,
+				13AA6525270155E5005DCF13 /* TabBarNavigationView.swift in Sources */,
+				13AA652B27017787005DCF13 /* TaskTagList.swift in Sources */,
 				13AA64F227014E82005DCF13 /* ContentView.swift in Sources */,
+				13AA652E27017797005DCF13 /* TaskTagAddNew.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,12 +353,18 @@
 				13AA64F527014E82005DCF13 /* Persistence.swift in Sources */,
 				13AA650D27015098005DCF13 /* Task+CoreDataClass.swift in Sources */,
 				13AA651327015098005DCF13 /* TaskTag+CoreDataProperties.swift in Sources */,
+				13AA6529270155EF005DCF13 /* SideBarNabigationView.swift in Sources */,
+				13AA6532270177CB005DCF13 /* TaskTagDetail.swift in Sources */,
+				13AA6535270177E0005DCF13 /* TaskTagRow.swift in Sources */,
 				13AA652027015386005DCF13 /* AppStyles.swift in Sources */,
 				13AA650327014F19005DCF13 /* taskDemo.xcdatamodeld in Sources */,
 				13AA64F127014E82005DCF13 /* taskDemoApp.swift in Sources */,
 				13AA651127015098005DCF13 /* TaskTag+CoreDataClass.swift in Sources */,
 				13AA650F27015098005DCF13 /* Task+CoreDataProperties.swift in Sources */,
+				13AA6526270155E5005DCF13 /* TabBarNavigationView.swift in Sources */,
+				13AA652C27017787005DCF13 /* TaskTagList.swift in Sources */,
 				13AA64F327014E82005DCF13 /* ContentView.swift in Sources */,
+				13AA652F27017797005DCF13 /* TaskTagAddNew.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
