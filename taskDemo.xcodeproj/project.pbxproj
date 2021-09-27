@@ -90,11 +90,7 @@
 				13AA650627015017005DCF13 /* Views */,
 				13AA650527015011005DCF13 /* ViewModel */,
 				13AA65042701500A005DCF13 /* App */,
-				13AA64DD27014E81005DCF13 /* taskDemoApp.swift */,
-				13AA64DE27014E81005DCF13 /* ContentView.swift */,
-				13AA64DF27014E81005DCF13 /* Persistence.swift */,
 				13AA64E027014E82005DCF13 /* Assets.xcassets */,
-				13AA650027014F19005DCF13 /* taskDemo.xcdatamodeld */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -119,6 +115,8 @@
 		13AA65042701500A005DCF13 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				13AA64DD27014E81005DCF13 /* taskDemoApp.swift */,
+				13AA64DE27014E81005DCF13 /* ContentView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -126,6 +124,7 @@
 		13AA650527015011005DCF13 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				13AA64DF27014E81005DCF13 /* Persistence.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -133,6 +132,9 @@
 		13AA650627015017005DCF13 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				13AA652327015508005DCF13 /* Task */,
+				13AA6522270154FA005DCF13 /* TaskTag */,
+				13AA6521270154EE005DCF13 /* Navigation */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -140,6 +142,7 @@
 		13AA65072701501E005DCF13 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				13AA650027014F19005DCF13 /* taskDemo.xcdatamodeld */,
 				13AA651D27015372005DCF13 /* AppStyles */,
 				13AA6515270150A7005DCF13 /* TaskTag */,
 				13AA6514270150A0005DCF13 /* Task */,
@@ -180,6 +183,27 @@
 				13AA651E27015386005DCF13 /* AppStyles.swift */,
 			);
 			path = AppStyles;
+			sourceTree = "<group>";
+		};
+		13AA6521270154EE005DCF13 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		13AA6522270154FA005DCF13 /* TaskTag */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TaskTag;
+			sourceTree = "<group>";
+		};
+		13AA652327015508005DCF13 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Task;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
