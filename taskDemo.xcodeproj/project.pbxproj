@@ -25,6 +25,8 @@
 		13AA651127015098005DCF13 /* TaskTag+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA650A27015098005DCF13 /* TaskTag+CoreDataClass.swift */; };
 		13AA651227015098005DCF13 /* TaskTag+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA650B27015098005DCF13 /* TaskTag+CoreDataProperties.swift */; };
 		13AA651327015098005DCF13 /* TaskTag+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA650B27015098005DCF13 /* TaskTag+CoreDataProperties.swift */; };
+		13AA651A27015158005DCF13 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AA651927015158005DCF13 /* CloudKit.framework */; };
+		13AA651C27015174005DCF13 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AA651B27015174005DCF13 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,10 @@
 		13AA650927015098005DCF13 /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		13AA650A27015098005DCF13 /* TaskTag+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskTag+CoreDataClass.swift"; sourceTree = "<group>"; };
 		13AA650B27015098005DCF13 /* TaskTag+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskTag+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		13AA651627015148005DCF13 /* taskDemo (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "taskDemo (iOS).entitlements"; sourceTree = "<group>"; };
+		13AA65172701514F005DCF13 /* taskDemo--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "taskDemo--iOS--Info.plist"; sourceTree = "<group>"; };
+		13AA651927015158005DCF13 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		13AA651B27015174005DCF13 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13AA651A27015158005DCF13 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13AA651C27015174005DCF13 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,9 +71,12 @@
 		13AA64D527014E81005DCF13 = {
 			isa = PBXGroup;
 			children = (
+				13AA65172701514F005DCF13 /* taskDemo--iOS--Info.plist */,
+				13AA651627015148005DCF13 /* taskDemo (iOS).entitlements */,
 				13AA64DA27014E81005DCF13 /* Shared */,
 				13AA64EC27014E82005DCF13 /* macOS */,
 				13AA64E627014E82005DCF13 /* Products */,
+				13AA651827015158005DCF13 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +159,15 @@
 				13AA650B27015098005DCF13 /* TaskTag+CoreDataProperties.swift */,
 			);
 			path = TaskTag;
+			sourceTree = "<group>";
+		};
+		13AA651827015158005DCF13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13AA651B27015174005DCF13 /* CloudKit.framework */,
+				13AA651927015158005DCF13 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,11 +413,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "taskDemo (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 63AJC847ZW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "taskDemo--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -423,11 +445,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "taskDemo (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 63AJC847ZW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "taskDemo--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
